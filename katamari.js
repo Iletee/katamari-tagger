@@ -1,13 +1,11 @@
-/*
-* Javascript and idea partially stolen from http://github.com/bantic/wordless-web
-*/
+;(function() {
   // This is hosted off of github
   // because we don't want to deal with setting up and serving off of SSL
   // through our domain provider
-  console.log('loading');
-    window.__wlw = {};
+  window.__wlw = {};
   window.__wlw.loading_jQuery = false;
-
+  window.__wlw.loader = function() {
+     console.log('loading');
     if (typeof(jQuery) === 'undefined') {
       if (window.__wlw.loading_jQuery) {
         setTimeout(window.__wlw.loader, 100);
@@ -24,4 +22,18 @@
 	//	alert('JQuery present!');
     }
 	console.log('loading done');
-	
+  }
+
+  window.__wlw.live = function(jQuery) {
+    
+  };
+
+  window.__wlw.getTextNodesIn = function(jQuery, el) {
+    
+  };
+
+  window.__wlw.hideWords = function(jQuery, include_transitions) {
+   
+  }
+  window.__wlw.loader();
+})();
