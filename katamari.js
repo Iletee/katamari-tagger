@@ -5,6 +5,7 @@
   // because we don't want to deal with setting up and serving off of SSL
   // through our domain provider
   console.log('loading');
+  var window.__wlw.loading_jQuery= false;
     if (typeof(jQuery) === 'undefined') {
       if (window.__wlw.loading_jQuery) {
         setTimeout(window.__wlw.loader, 100);
@@ -13,7 +14,9 @@
         var jq_script = document.createElement('script');
         jq_script.src = '//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';
         document.body.appendChild(jq_script);
-        window.__wlw.loader();
+        
+		//go to next function
+		window.__wlw.loader();
       }
     } else {
 	//	alert('JQuery present!');
