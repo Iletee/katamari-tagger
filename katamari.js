@@ -42,14 +42,16 @@
 		console.info('jQuery UI present');
 	
 	console.log('testing hiliter');
-	$('body').append('<div id="dialog"><p>some text</p></div>');
-	$("#dialog").dialog();
+	
 	$("div").click(function(){
 		$(this).draggable();
 		$(this).effect("highlight", {}, 3000);
 		});
 	
 	console.log('hiliter set');
+	
+	$('body').append('<div id="dialog"><p>some text</p></div>');
+	$('#dialog').dialog();
   };
   
   window.__kt.juiLoader = function(jQuery){
