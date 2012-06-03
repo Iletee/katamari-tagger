@@ -50,9 +50,10 @@
 		console.info('jQuery UI present');
 		
 		console.log('testing hiliter');
-	jQuery("div").click(function () {
+/*	jQuery("div").click(function () {
 	 jQuery(this).effect("highlight", {}, 3000);
 	});
+	*/
   };
   
   window.__kt.hilite = function(jQuery){
