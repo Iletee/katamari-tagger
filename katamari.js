@@ -40,6 +40,7 @@
 		var jq_script3 = document.createElement('script');
 		jq_script3.src = '//ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js';
 		document.body.appendChild(jq_script3);
+		console.info('jQuery UI present');
   };
   
   window.__kt.hilite = function(jQuery){
