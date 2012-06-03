@@ -19,6 +19,8 @@
         window.__wlw.loader();
       }
     } else {
-		alert('JQuery present!');
+	//	alert('JQuery present!');
     }
+	
+	console.log('loading done');
   }
