@@ -45,6 +45,7 @@
 	jQuery("div").click(function () {
 	 jQuery(this).effect("highlight", {}, 3000);
 });
+	console.log('hiliter set');
   };
   
   window.__kt.juiLoader = function(jQuery){
@@ -72,7 +73,7 @@
 		//window.__kt.juiLoader();
 		console.log('loaders are done');
 		//All necessary items have now been loaded
-		window.__kt.hilite(jQuery);
+		//window.__kt.hilite(jQuery);
   };
   
   //Load katamari
