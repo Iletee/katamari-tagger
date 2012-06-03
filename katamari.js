@@ -51,6 +51,7 @@
 	console.log('hiliter set');
 	
 	$('body').append('<div id="dialog"><p>some text</p></div>');
+	$('#dialog').append('<p>kl</p>');
 	$('#dialog').dialog();
   };
   
