@@ -15,7 +15,7 @@
       } else {
         window.__kt.loading_jQuery= true;
         var jq_script = document.createElement('script');
-        jq_script.src = '//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js';
+        jq_script.src = 'https://raw.github.com/Ile2/katamari-tagger/master/jquery.js';
         document.body.appendChild(jq_script);
         
 		//go to next function
@@ -37,7 +37,7 @@
 		
 		console.info('loading JUI');
 		var jq_script3 = document.createElement('script');
-		jq_script3.src = 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js';
+		jq_script3.src = 'https://raw.github.com/Ile2/katamari-tagger/master/jquery-ui.js';
 		document.body.appendChild(jq_script3);
 		console.info('jQuery UI present');
 	
