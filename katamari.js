@@ -16,13 +16,20 @@
         document.body.appendChild(jq_script);
         
 		//go to next function
-		window.__kt.loader();
+		window.__kt.storeLoader();
       }
     } else {
-		console.err('JQuery present!');
+		console.info('JQuery present!');
     }
 	console.log('loading done');
   }
+  
+  window.__kt.storeLoader = function(){
+	 var jq2_script = document.createElement('script');
+        jq2_script.src = '//raw.github.com/Ile2/katamari-tagger/master/store.min.js';
+        document.body.appendChild(jq_script);
+		console.info('store.js present');
+  };
 
   window.__kt.live = function(jQuery) {
     
