@@ -42,7 +42,7 @@
 		console.info('jQuery UI present');
 	
 	console.log('testing hiliter');
-	$(body).append('<div id="dialog"></div>');
+	$(body).append('<div id="dialog"><p>some text</p></div>');
 	$("#dialog").dialog();
 	$("div").click(function(){
 		$(this).draggable();
