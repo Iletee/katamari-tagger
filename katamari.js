@@ -24,4 +24,4 @@
 	
 	console.log('loading done');
   }
-  }
+  });
