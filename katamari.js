@@ -34,8 +34,6 @@
         jq2_script.src = '//raw.github.com/Ile2/katamari-tagger/master/store.min.js';
         document.body.appendChild(jq2_script);
 		console.info('store.js present');
-		
-		window.__kt.action();
   };
   
   window.__kt.juiLoader = function(jQuery){
