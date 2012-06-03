@@ -4,7 +4,7 @@
   // This is hosted off of github
   // because we don't want to deal with setting up and serving off of SSL
   // through our domain provider
-  Console.log('loading');
+  console.log('loading');
     if (typeof(jQuery) === 'undefined') {
       if (window.__wlw.loading_jQuery) {
         setTimeout(window.__wlw.loader, 100);
@@ -18,5 +18,5 @@
     } else {
 	//	alert('JQuery present!');
     }
-	Console.log('loading done');
+	console.log('loading done');
 	
