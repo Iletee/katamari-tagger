@@ -22,6 +22,7 @@
 	//	alert('JQuery present!');
     }
 	
-	console.log('loading done');
+	
   }
+  console.log('loading done');
   });
