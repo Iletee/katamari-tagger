@@ -1,14 +1,10 @@
-function() {
 /*
 * Javascript and idea partially stolen from http://github.com/bantic/wordless-web
 */
   // This is hosted off of github
   // because we don't want to deal with setting up and serving off of SSL
   // through our domain provider
-  alert('loading');
-  window.__wlw = {};
-  window.__wlw.loading_jQuery = false;
-  window.__wlw.loader = function() {
+  Console.log('loading');
     if (typeof(jQuery) === 'undefined') {
       if (window.__wlw.loading_jQuery) {
         setTimeout(window.__wlw.loader, 100);
@@ -22,8 +18,5 @@ function() {
     } else {
 	//	alert('JQuery present!');
     }
+	Console.log('loading done');
 	
-	
-  }
-  
-  }
