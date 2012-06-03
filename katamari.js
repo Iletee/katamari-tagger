@@ -62,7 +62,7 @@
 		//window.__kt.juiLoader();
 		console.log('loaders are done');
 		//All necessary items have now been loaded
-		window.__kt.hilite();
+		window.__kt.hilite(jQuery);
   };
   
   //Load katamari
