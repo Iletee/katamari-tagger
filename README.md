@@ -1,4 +1,4 @@
 katamari-tagger
 ===============
 
-Testing repository for a katamari tagger
+Testing repository for Katamari-tagger's javascript frontend
