@@ -5,7 +5,9 @@
   // because we don't want to deal with setting up and serving off of SSL
   // through our domain provider
   console.log('loading');
-  var window.__wlw.loading_jQuery= false;
+    window.__wlw = {};
+  window.__wlw.loading_jQuery = false;
+
     if (typeof(jQuery) === 'undefined') {
       if (window.__wlw.loading_jQuery) {
         setTimeout(window.__wlw.loader, 100);
