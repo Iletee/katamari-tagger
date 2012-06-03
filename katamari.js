@@ -43,12 +43,20 @@
 	
 	console.log('testing hiliter');
 	
-	$("div").click(function(){
+	$("p").click(function(){
 		$(this).draggable();
 		$(this).effect("highlight", {}, 3000);
 		});
-	
+	$("a").click(function(){
+		$(this).draggable();
+		$(this).effect("highlight", {}, 3000);
+		});
 	console.log('hiliter set');
+	
+	$("img").click(function(){
+		$(this).draggable();
+		$(this).effect("highlight", {}, 3000);
+		});
 	
 	$('body').append('<div id="dialog"><p>some text</p></div>');
 	$('#dialog').append('<p>kl</p>');
