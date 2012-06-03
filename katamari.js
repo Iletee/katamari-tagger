@@ -20,14 +20,16 @@
       }
     } else {
 		console.info('JQuery present!');
+		window.__kt.storeLoader();
     }
 	console.log('loading done');
   }
   
-  window.__kt.storeLoader = function(){
+  window.__kt.storeLoader = function(jQuery){
+	console.log('loading store');
 	 var jq2_script = document.createElement('script');
         jq2_script.src = '//raw.github.com/Ile2/katamari-tagger/master/store.min.js';
-        document.body.appendChild(jq_script);
+        document.body.appendChild(jq2_script);
 		console.info('store.js present');
   };
 
