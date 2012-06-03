@@ -1,4 +1,7 @@
 ;(function() {
+	// Derivative work out of http://github.com/bantic/wordless-web/master/wlw.js
+	// Excellent loader and bookmarklet template!
+	
   // This is hosted off of github
   // because we don't want to deal with setting up and serving off of SSL
   // through our domain provider
@@ -16,7 +19,7 @@
         document.body.appendChild(jq_script);
         
 		//go to next function
-		window.__kt.storeLoader();
+		window.__kt.action();
       }
     } else {
 		console.info('JQuery present!');
@@ -31,19 +34,30 @@
         jq2_script.src = '//raw.github.com/Ile2/katamari-tagger/master/store.min.js';
         document.body.appendChild(jq2_script);
 		console.info('store.js present');
+		
+		window.__kt.action();
+  };
+  
+  window.__kt.juiLoader = function(jQuery){
+		var jq_script3 = document.createElement('script');
+		jq_script3.src = '//ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js';
+		document.body.appendChild(jq_script3);
+  };
+  
+  window.__kt.hilite = function(jQuery){
+	jQuery("div").click(function () {
+	 jQuery(this).effect("highlight", {}, 3000);
+});
   };
 
-  window.__kt.live = function(jQuery) {
-    
+  window.__kt.action = function(jQuery) {
+		window.__kt.storeLoader();
+		window.__kt.juiLoader();
+		
+		//All necessary items have now been loaded
+		window.__kt.hilite();
   };
-
-  window.__kt.getTextNodesIn = function(jQuery, el) {
-    
-  };
-
-  window.__kt.hideWords = function(jQuery, include_transitions) {
-   
-  }
+  
   //Load katamari
   window.__kt.loader();
 })();
