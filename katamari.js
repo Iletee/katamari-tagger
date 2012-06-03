@@ -5,6 +5,7 @@
   // This is hosted off of github
   // because we don't want to deal with setting up and serving off of SSL
   // through our domain provider
+  console.log('loading done');
   window.__wlw = {};
   window.__wlw.loading_jQuery = false;
   window.__wlw.loader = function() {
@@ -24,5 +25,5 @@
 	
 	
   }
-  console.log('loading done');
+  
   });
