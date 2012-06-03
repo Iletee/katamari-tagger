@@ -31,14 +31,14 @@
   window.__kt.storeLoader = function(jQuery){
 	console.log('loading store');
 	 var jq2_script = document.createElement('script');
-        jq2_script.src = '//raw.github.com/Ile2/katamari-tagger/master/store.min.js';
+        jq2_script.src = 'https://raw.github.com/Ile2/katamari-tagger/master/store.min.js';
         document.body.appendChild(jq2_script);
 		console.info('store.js present');
   };
   
   window.__kt.juiLoader = function(jQuery){
 		var jq_script3 = document.createElement('script');
-		jq_script3.src = '//ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js';
+		jq_script3.src = 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js';
 		document.body.appendChild(jq_script3);
 		console.info('jQuery UI present');
   };
