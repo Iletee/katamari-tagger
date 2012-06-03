@@ -48,7 +48,6 @@
 		jq_script3.src = 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js';
 		document.body.appendChild(jq_script3);
 		console.info('jQuery UI present');
-		
 		console.log('testing hiliter');
 /*	jQuery("div").click(function () {
 	 jQuery(this).effect("highlight", {}, 3000);
