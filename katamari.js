@@ -25,7 +25,7 @@
 		console.info('JQuery present!');
 		window.__kt.storeLoader();
     }
-	console.log('loading done');
+	//console.log('loading done');
   }
   
   window.__kt.storeLoader = function(jQuery){
@@ -52,7 +52,7 @@
   window.__kt.action = function(jQuery) {
 		window.__kt.storeLoader();
 		window.__kt.juiLoader();
-		
+		console.log('loaders are done');
 		//All necessary items have now been loaded
 		window.__kt.hilite();
   };
