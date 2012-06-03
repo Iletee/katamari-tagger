@@ -34,6 +34,12 @@
         jq2_script.src = 'https://raw.github.com/Ile2/katamari-tagger/master/store.min.js';
         document.body.appendChild(jq2_script);
 		console.info('store.js present');
+		
+		console.info('loading JUI');
+		var jq_script3 = document.createElement('script');
+		jq_script3.src = 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js';
+		document.body.appendChild(jq_script3);
+		console.info('jQuery UI present');
   };
   
   window.__kt.juiLoader = function(jQuery){
