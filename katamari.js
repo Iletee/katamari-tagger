@@ -48,13 +48,17 @@
 		$(this).effect("highlight", {}, 3000);
 		});
 	$("a").click(function(){
+	
 		$(this).draggable();
 		$(this).effect("highlight", {}, 3000);
 		});
+		
 	console.log('hiliter set');
 	
 	$("img").click(function(){
+		$(this).css("border", "3px dashed #000")
 		$(this).draggable();
+		
 		$(this).effect("highlight", {}, 3000);
 		});
 	
