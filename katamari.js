@@ -42,9 +42,7 @@
 		console.info('jQuery UI present');
 	
 	console.log('testing hiliter');
-	jQuery("div").click(function(){
-	 jQuery(this).effect("highlight", {}, 3000);
-	});
+	jQuery("div").click(alert('lol'););
 	console.log('hiliter set');
   };
   
