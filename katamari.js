@@ -51,6 +51,7 @@
   };
   
   window.__kt.hilite = function(jQuery){
+	console.log('testing hiliter');
 	jQuery("div").click(function () {
 	 jQuery(this).effect("highlight", {}, 3000);
 });
@@ -58,7 +59,7 @@
 
   window.__kt.action = function(jQuery) {
 		window.__kt.storeLoader();
-		window.__kt.juiLoader();
+		//window.__kt.juiLoader();
 		console.log('loaders are done');
 		//All necessary items have now been loaded
 		window.__kt.hilite();
