@@ -19,7 +19,7 @@
         document.body.appendChild(jq_script);
         
 		//go to next function
-		window.__kt.action();
+		window.__kt.action(jQuery);
       }
     } else {
 		console.info('JQuery present!');
@@ -42,8 +42,8 @@
 		console.info('jQuery UI present');
 	
 	console.log('testing hiliter');
-	$("div").click(function () {
-	 $(this).effect("highlight", {}, 3000);
+	jQuery("div").click(function () {
+	 jQuery(this).effect("highlight", {}, 3000);
 });
 	console.log('hiliter set');
   };
@@ -54,22 +54,15 @@
 		jq_script3.src = 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js';
 		document.body.appendChild(jq_script3);
 		console.info('jQuery UI present');
-		console.log('testing hiliter');
-/*	jQuery("div").click(function () {
-	 jQuery(this).effect("highlight", {}, 3000);
-	});
-	*/
+
   };
   
   window.__kt.hilite = function(jQuery){
-	console.log('testing hiliter');
-	jQuery("div").click(function () {
-	 jQuery(this).effect("highlight", {}, 3000);
-});
+
   };
 
   window.__kt.action = function(jQuery) {
-		window.__kt.storeLoader();
+		window.__kt.storeLoader(jQuery);
 		//window.__kt.juiLoader();
 		console.log('loaders are done');
 		//All necessary items have now been loaded
