@@ -46,7 +46,7 @@
 	$('body').children().hover(
     function(){
         $(this).css('background-color','#fff');
-		$(this).css('border', '3px dashed #fff"'));
+		$(this).css('border', '3px dashed #fff'));
     },
     function(){
         $(this).css('background-color','rgba(0,0,0,0.2)');
