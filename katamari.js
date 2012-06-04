@@ -67,6 +67,12 @@
 		$(this).effect("highlight", {}, 3000);
 		});
 		
+		$("div").click(function(){
+	
+		$(this).draggable();
+		$(this).effect("highlight", {}, 3000);
+		});
+		
 	console.log('hiliter set');
 	
 	$("img").click(function(){
