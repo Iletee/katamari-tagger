@@ -64,7 +64,7 @@
 	
 	$('body').append('<div id="dialog"><p>some text</p></div>');
 	$('#dialog').append('<p>kl</p>');
-	$('#dialog').dialog();
+	//$('#dialog').dialog();
 	
 	$('html').children().css('background-color','rgba(0,0,0,0.2)');
 $('body').children().hover(
