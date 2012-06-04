@@ -43,15 +43,12 @@
 	
 	console.log('testing hiliter');
 	
-	$('body').children().hover(
+   $('body').children().hover(
     function(){
-        $(this).css('background-color','#fff');
-		$(this).css('border', '3px dashed #fff');
-		
+        $(this).css('border','3px solid #fff');
     },
     function(){
-        $(this).css('background-color','rgba(0,0,0,0.2)');
-		$(this).css('border', 'none');
+        $(this).css('border','none');
     });
 	
 	$("p").click(function(){
