@@ -46,11 +46,12 @@
 	$('body').children().hover(
     function(){
         $(this).css('background-color','#fff');
-		$(this).css('border', '3px dashed #fff'));
+		$(this).css('border', '3px dashed #fff');
+		
     },
     function(){
         $(this).css('background-color','rgba(0,0,0,0.2)');
-		$(this).css('border', 'none'));
+		$(this).css('border', 'none');
     });
 	
 	$("p").click(function(){
@@ -78,7 +79,7 @@
 	console.log('hiliter set');
 	
 	$("img").click(function(){
-		$(this).css("border", "3px dashed #000")
+		$(this).css("border", "3px dashed #000");
 		$(this).draggable();
 		
 		$(this).effect("highlight", {}, 3000);
