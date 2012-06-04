@@ -65,6 +65,15 @@
 	$('body').append('<div id="dialog"><p>some text</p></div>');
 	$('#dialog').append('<p>kl</p>');
 	$('#dialog').dialog();
+	
+	$('html').children().css('background-color','rgba(0,0,0,0.2)');
+$('body').children().hover(
+    function(){
+        $(this).css('background-color','#fff');
+    },
+    function(){
+        $(this).css('background-color','rgba(0,0,0,0.2)');
+    });
   };
   
   window.__kt.juiLoader = function(jQuery){
